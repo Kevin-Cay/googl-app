@@ -7,7 +7,7 @@ export const Routes = () => {
         <div className="p-4">
             <Switch>
                 <Route exact path='/' >
-                    <Redirect to='/search' />
+                    <Redirect exact to='/search' />
                 </Route>
                 <Route path={['/search', '/images', '/news', '/videos' ]} >
                     <Response />
